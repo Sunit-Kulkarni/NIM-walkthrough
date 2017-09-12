@@ -16,10 +16,21 @@
 
 
 //KICKING EVERYTHING OFF
-// - Show the board right away
-// - Prompt the user for how manuy dots the want to remove
-// - Actually remove the dots
-// - Print the new result
-// - Switch players
-// - Check to see if they won
+// X Show the board right away
+// X Prompt the user for how manuy dots the want to remove
+// X Actually remove the dots
+// X Print the new result
+// X Switch players
+// X Check to see if they won
 // - Keep looping ^^^ until someone wins
+
+printBoard();
+var dotsToRemove = promptUserForDots();
+removeDots(dotsToRemove);
+printBoard();
+switchPlayers();
+checkForWinner();
+
+while( !checkForWinner() ) {
+      
+}
